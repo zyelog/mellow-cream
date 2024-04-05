@@ -1,0 +1,596 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GangwonEdu_OTFLightA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFLightA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Light";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Midium";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Midium.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Black";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+}
+
+body {
+  font-family: "GangwonEdu_OTFLightA";
+}
+
+.lacey {
+  width: 100%;
+  height: 35px;
+  background: url(../images/lace_y.png);
+  position: absolute;
+  top: -35px;
+  z-index: 10;
+}
+
+.laceb {
+  width: 100%;
+  height: 72px;
+  background: url(../images/lace_b.png);
+  position: absolute;
+  top: -35px;
+}
+
+.lacep {
+  width: 100%;
+  height: 50px;
+  background: url(../images/lace_p.png);
+  position: absolute;
+  top: -36px;
+}
+
+.visual {
+  width: 100%;
+  min-width: 1200px;
+  height: 100vh;
+  background: url(../images/visual.jpg);
+  background-size: cover;
+}
+
+.section1 {
+  width: 100%;
+  min-width: 1200px;
+  height: 515px;
+  background: #fff6dc;
+  position: relative;
+}
+.section2 {
+  width: 100%;
+  min-width: 1200px;
+  height: 1070px;
+  background: #009fd7;
+  position: relative;
+}
+.section3 {
+  width: 100%;
+  min-width: 1200px;
+  height: 1190px;
+  background: #fff6dc;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  min-width: 1200px;
+  height: 360px;
+  background: #003345;
+}
+
+.centerbox {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* header */
+.header_sub {
+  z-index: 7;
+  width: 100%;
+  min-width: 1200px;
+  height: 230px;
+  background: url(../images/header_cloud3.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header_main {
+  width: 100%;
+  min-width: 1200px;
+  height: 230px;
+  background: url(../images/header_cloud3.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header h1 {
+  width: 170px;
+  height: 80px;
+  margin: 20px auto 15px auto;
+}
+
+header h1 img {
+  width: 100%;
+}
+
+header nav {
+  width: 100%;
+  height: 50px;
+}
+
+header nav ul {
+  text-align: center;
+  font-size: 0;
+}
+
+header nav > ul > li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  position: relative;
+}
+
+header nav > ul > li > a {
+  color: #009fd7;
+  padding: 0 60px;
+  display: block;
+  font-family: "GangwonEdu_OTFBoldA";
+}
+
+/* Header Dropdown Menu Styles */
+header nav ul li .lnb {
+  position: absolute;
+  width: auto;
+  z-index: 5;
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  white-space: nowrap; /* 줄 바꿈 방지 */
+  background: rgba(255, 188, 231, 0.5);
+  border-radius: 50px;
+}
+
+header nav ul li:hover .lnb {
+  padding: 20px 10px 10px 10px;
+  height: auto;
+}
+
+header nav ul li .lnb li {
+  font-size: 20px;
+  font-family: "GangwonEdu_OTFBoldA";
+  display: inline-block;
+  margin-right: 50px;
+}
+
+header nav ul li .lnb li:last-child {
+  margin-right: 0;
+}
+
+header nav ul li .lnb li a {
+  color: #009fd7;
+}
+
+header nav ul li .lnb li a:hover {
+  color: #fff6db;
+}
+header nav .lnb_bg {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 0;
+  top: 150px;
+}
+
+header nav:hover .lnb_bg {
+  height: 200px;
+  transition: 0.3s;
+}
+
+/* visual */
+.textbox {
+  width: 515px;
+  height: 210px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(25%, -30%);
+  font-size: 95px;
+  color: #009fd7;
+  animation: textbox 5s;
+}
+
+@keyframes textbox {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: 210px;
+    opacity: 1;
+  }
+}
+
+/* section1 */
+.section1 .centerbox {
+  padding-top: 180px;
+}
+.section1 h2 {
+  width: 450px;
+  height: 60px;
+  margin: 0px auto 90px auto;
+  font-size: 60px;
+  color: #009fd7;
+  font-weight: normal;
+}
+.section1 .cont li {
+  width: 280px;
+  height: 280px;
+  border-radius: 25px;
+  background: #fff;
+  float: left;
+  margin-right: 26px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.section1 .cont li:nth-child(4) {
+  margin-right: 0;
+}
+.section1 .cont li figure {
+  width: 100%;
+  height: 193px;
+  text-align: center;
+}
+.section1 .cont li figure img {
+  margin: 20px auto 0 auto;
+}
+.section1 .cont li p {
+  font-size: 40px;
+  text-align: center;
+  height: 87px;
+  line-height: 87px;
+  background: #fff6dc;
+  color: #009fd7;
+}
+
+/* section2 */
+.section2 .centerbox {
+  padding-top: 300px;
+}
+.section2 h2 {
+  width: 550px;
+  height: 60px;
+  margin: 0px auto 90px auto;
+  font-size: 60px;
+  color: #fff6dc;
+  font-weight: normal;
+}
+.section2 .cont li {
+  width: 380px;
+  height: 485px;
+  border-radius: 190px 190px 0 0;
+  background: #ffbce7;
+  float: left;
+  margin-right: 26px;
+}
+.section2 .cont li:nth-child(3) {
+  margin-right: 0;
+}
+.section2 .cont li figure {
+  width: 100%;
+  height: 485px;
+  text-align: center;
+}
+
+.section2 .cont li p {
+  font-size: 24px;
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  margin-top: 19px;
+  font-family: "Pretendard-ExtraLight";
+}
+/* .section2:before {
+    content:"";
+    position: absolute;
+    width: 170px;
+    height: 280px;
+    background: #000;
+    left: 0;
+    top: 500px;
+}
+.section2:after {
+    content:"";
+    position: absolute;
+    width: 170px;
+    height: 280px;
+    background: #000;
+    right: 0;
+    top: 500px;
+} */
+/* section3 */
+.section3 .centerbox {
+  padding-top: 180px;
+}
+.section3 h2 {
+  width: 800px;
+  height: 60px;
+  margin: 0px auto 90px auto;
+  font-size: 60px;
+  color: #009fd7;
+  font-weight: normal;
+}
+.section3 .cont li {
+  width: 585px;
+  height: 672px;
+  background: #000;
+  border-radius: 25px;
+  float: left;
+  position: relative;
+}
+.section3 .cont2 li {
+  width: 584px;
+  height: 321px;
+  background: #000;
+  border-radius: 25px;
+  float: right;
+  margin-top: 30px;
+  position: relative;
+}
+.section3 .cont2 li:nth-child(1) {
+  margin-top: 0;
+}
+.section3 .cont li h3 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Pretendard-ExtraLight";
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.section3 .cont li p {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Pretendard-Regular";
+  position: absolute;
+  bottom: 85px;
+  left: 40px;
+}
+.section3 .cont li span {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Pretendard-ExtraLight";
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+.section3 .cont2 li h3 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Pretendard-ExtraLight";
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+/* footer */
+footer {
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+footer h1 {
+  width: 170px;
+  height: 80px;
+  margin: 0 auto 50px auto;
+}
+footer address {
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  color: #fff;
+  font-family: "Pretendard-ExtraLight";
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .section2:before {
+    display: none;
+  }
+  .section2:after {
+    display: none;
+  }
+}
+
+/* 서브 */
+.visual_sub .centerbox {
+  padding-top: 380px;
+}
+.visual_sub {
+  width: 100%;
+  height: 1000px;
+  background: #009fd7;
+  background-size: cover;
+  position: relative;
+}
+/* .visual_sub:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top : 0;
+} 반투명한 배경 만들기 */
+.visual_sub h2 {
+  width: 1200px;
+  height: 300px;
+  text-align: center;
+  font-size: 100px;
+  color: #fff6db;
+}
+.visual_sub p {
+  width: 1200px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff6db;
+  line-height: 50px;
+}
+
+
+.sub_section {
+  height: 3214px;
+  background: #fff6db;
+  position: relative;
+}
+.sub_section .cont figure {
+  width: 100%;
+  height: 981px;
+}
+.sub_section .cont .textbox_l {
+  width: 100%;
+  height: 412px;
+  text-align: left;
+  padding-top: 150px;
+}
+.sub_section .cont .textbox_l h2 {
+  width: 250px;
+  height: 182px;
+  font-size: 200px;
+  font-family: "Pretendard-Black";
+  color: #009fd7;
+  float: left;
+  text-indent: -10px;
+}
+.sub_section .cont .textbox_l strong {
+  width: 800px;
+  height: 50px;
+  font-size: 40px;
+  font-family: "Pretendard-Midium";
+  color: #009fd7;
+  float: left;
+  margin: 140px 0 0 30px;
+}
+.sub_section .cont .textbox_l p {
+  font-size: 26px;
+  font-family: "Pretendard-Light";
+  color: #009fd7;
+  float: left;
+  margin-top: 45px;
+}
+.sub_section .cont .textbox_r {
+  width: 100%;
+  height: 412px;
+  text-align: right;
+  padding-top: 100px;
+}
+.sub_section .cont .textbox_r h2 {
+  width: 260px;
+  height: 182px;
+  font-size: 200px;
+  font-family: "Pretendard-Black";
+  color: #009fd7;
+  float: right;
+}
+.sub_section .cont .textbox_r strong {
+  width: 800px;
+  height: 50px;
+  font-size: 40px;
+  font-family: "Pretendard-Midium";
+  color: #009fd7;
+  float: right;
+  margin: 140px 30px 0 0;
+}
+.sub_section .cont .textbox_r p {
+  font-size: 26px;
+  font-family: "Pretendard-Light";
+  color: #009fd7;
+  float: right;
+  margin-top: 45px;
+}
+
+/* subsection2 */
+.sub_section2 {
+  height: 890px;
+  background: #fabed7;
+  position: relative;
+}
+.sub_section2 .centerbox {
+  position: relative;
+}
+.sub_section2 p {
+  width: 1200px;
+  height: 300px;
+  text-align: center;
+  font-size: 50px;
+  color: #fff6db;
+  line-height: 60px;
+  padding-top: 200px;
+}
+.sub_section2 .cloud {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+}
+.sub_section2 .cloud img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.sub_section2 .cloud span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 30px;
+  color: #fabed7;
+}
